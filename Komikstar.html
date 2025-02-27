@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komik star</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p>KOMIK STAR</p>
+</body>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">menu</a></li>
+                <li><a href="#">top komik</a></li>
+                <li><a href="#">list komik</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>komikstar Website</h1>
+        <ul id="komik-list">
+            <!-- komik list will go here -->
+        </ul>
+    </main>
+    <footer>
+        <p>&copy;komikstar Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">daftarkomik</a></li>
+                <li><a href="#">tipe komik</a></li>
+                <li><a href="#">genre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>komikstar</h1>
+        <p> komik komikstar </p> <img src="penyimpan/Pictures/Komikstar.jpg">
+        <p>komik terbaru</p>
+        <ul id="comic-nav">
+            <li><a href="#" class="prev">Previous</a></li>
+            <li><a href="#" class="next">Next</a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; komikstar Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+/*mahnwa*/
+
+.comic-page {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comic-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.comic-nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.comic-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.comic-nav a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.comic-nav a:hover {
+    color: #23527c;
+}
+// Get the comic navigation elements
+const comicNav = document.getElementById('comic-nav');
+const prevButton = comicNav.querySelector('.prev');
+const nextButton = comicNav.querySelector('.next');
+
+// Add event listeners to the navigation buttons
+prevButton.addEventListener('click', () => {
+  // Go to the previous comic
+  console.log('Previous comic button clicked!');
+  // TO DO: implement logic to go to the previous comic
+});
+
+nextButton.addEventListener('click', () => {
+  // Go to the next comic
+  console.log('Next comic button clicked!');
+  // TO DO: implement logic to go to the next comic
+});
+
+// Add a function to load the comic image
+function loadComicImage(comicId) {
+  // TO DO: implement logic to load the comic image based on the comic ID
+  console.log(`Loading comic image for comic ID ${comicId}`);
+}
+
+// Load the comic image for the current comic
+loadComicImage(1); // Replace with the current comic ID
